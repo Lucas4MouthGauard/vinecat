@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { MessageCircle, Heart, Zap } from 'lucide-react'
+import vinecatLogo from '../assets/vinecat.png'
 
 const InteractiveCat: React.FC = () => {
   const [ref, inView] = useInView({
@@ -231,7 +232,7 @@ const InteractiveCat: React.FC = () => {
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 className="w-96 h-96 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl mb-8 overflow-hidden"
               >
-                <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
+                <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
               </motion.div>
               
               {/* 心情指示器 */}
@@ -291,7 +292,7 @@ const InteractiveCat: React.FC = () => {
           >
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-                <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
+                <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
               </div>
                                 <div>
                     <h3 className="font-semibold">VineCat</h3>

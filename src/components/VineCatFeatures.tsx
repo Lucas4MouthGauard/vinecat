@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Sparkles, Zap, Star, Crown } from 'lucide-react'
+import vinecatLogo from '../assets/vinecat.png'
 
 const VineCatFeatures: React.FC = () => {
   const [ref, inView] = useInView({
@@ -81,7 +82,7 @@ const VineCatFeatures: React.FC = () => {
                 }}
                 className="w-80 h-80 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl overflow-hidden"
               >
-                <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
+                                      <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
               </motion.div>
               
               {/* Decorative Elements */}
