@@ -58,9 +58,9 @@ const Hero: React.FC = () => {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="w-32 h-32 mx-auto mb-8 bg-cat-orange rounded-full flex items-center justify-center shadow-2xl"
+            className="w-32 h-32 mx-auto mb-8 bg-cat-orange rounded-full flex items-center justify-center shadow-2xl overflow-hidden"
           >
-            <span className="text-6xl">🐱</span>
+            <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
           </motion.div>
         </motion.div>
 

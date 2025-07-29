@@ -15,8 +15,8 @@ const LoadingScreen: React.FC = () => {
           transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
           className="w-24 h-24 mx-auto mb-8"
         >
-          <div className="w-full h-full bg-cat-orange rounded-full flex items-center justify-center">
-            <span className="text-4xl">🐱</span>
+          <div className="w-full h-full bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
+            <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
           </div>
         </motion.div>
         

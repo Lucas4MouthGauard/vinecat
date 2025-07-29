@@ -5,7 +5,6 @@ import Hero from './components/Hero'
 import AboutVine from './components/AboutVine'
 import VineCatFeatures from './components/VineCatFeatures'
 import InteractiveCat from './components/InteractiveCat'
-import VideoGallery from './components/VideoGallery'
 import Footer from './components/Footer'
 import LoadingScreen from './components/LoadingScreen'
 
@@ -26,8 +25,7 @@ function App() {
     { id: 'home', name: '首页' },
     { id: 'about', name: '关于Vine' },
     { id: 'features', name: 'VineCat特色' },
-    { id: 'interactive', name: '智能交互' },
-    { id: 'gallery', name: '视频展示' }
+    { id: 'interactive', name: '智能交互' }
   ]
 
   const scrollToSection = (sectionId: string) => {
@@ -67,10 +65,6 @@ function App() {
             
             <section id="interactive">
               <InteractiveCat />
-            </section>
-            
-            <section id="gallery">
-              <VideoGallery />
             </section>
           </main>
           

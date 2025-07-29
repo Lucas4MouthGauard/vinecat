@@ -106,9 +106,9 @@ const InteractiveCat: React.FC = () => {
               <motion.div
                 animate={catAnimations[catMood]}
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="w-96 h-96 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl mb-8"
+                className="w-96 h-96 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl mb-8 overflow-hidden"
               >
-                <span className="text-9xl">🐱</span>
+                <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
               </motion.div>
               
               {/* 心情指示器 */}
@@ -167,8 +167,8 @@ const InteractiveCat: React.FC = () => {
             className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-xl"
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center">
-                <span className="text-xl">🐱</span>
+              <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
+                <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="font-semibold">VineCat</h3>

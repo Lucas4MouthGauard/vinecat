@@ -44,8 +44,8 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center">
-              <span className="text-xl">🐱</span>
+            <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
+              <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
             </div>
             <span className={`text-xl font-bold font-cat ${
               isScrolled ? 'text-vine-600' : 'text-white'

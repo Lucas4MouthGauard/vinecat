@@ -72,9 +72,9 @@ const VineCatFeatures: React.FC = () => {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="w-80 h-80 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl"
+                className="w-80 h-80 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl overflow-hidden"
               >
-                <span className="text-8xl">🐱</span>
+                <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
               </motion.div>
               
               {/* 装饰性元素 */}
