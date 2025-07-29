@@ -168,19 +168,22 @@ const Hero: React.FC = () => {
                 <div className="bg-vine-800/50 rounded-lg p-4 border border-vine-600/30">
                   <div className="text-sm text-vine-300 mb-2">CA:</div>
                   <div className="text-lg font-mono text-cat-orange break-all">
-                    Coming Soon
+                    9aYzxshrricmHdwZo8GvAJg6wiHntHuhm7wE9ct3bonk
                   </div>
                 </div>
               </div>
               
               {/* Buy Button */}
-              <motion.button
+              <motion.a
+                href="https://letsbonk.fun/token/9aYzxshrricmHdwZo8GvAJg6wiHntHuhm7wE9ct3bonk"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-cat-orange to-vine-500 hover:from-cat-orange/90 hover:to-vine-500/90 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg transition-all duration-300"
+                className="bg-gradient-to-r from-cat-orange to-vine-500 hover:from-cat-orange/90 hover:to-vine-500/90 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg transition-all duration-300 inline-block"
               >
                 Buy
-              </motion.button>
+              </motion.a>
             </div>
           </div>
         </motion.div>
