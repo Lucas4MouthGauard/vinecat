@@ -163,21 +163,18 @@ const Hero: React.FC = () => {
         >
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              {/* Token Symbol */}
-              <div className="text-center">
-                <div className="text-2xl font-bold text-cat-orange mb-2">$VineCat</div>
-                <div className="text-sm text-vine-200">Token Symbol</div>
-              </div>
-              
               {/* Contract Address */}
               <div className="text-center">
-                <div className="bg-vine-800/50 rounded-lg p-3 border border-vine-600/30">
-                  <div className="text-sm text-vine-300 mb-1">CA: Coming Soon</div>
+                <div className="bg-vine-800/50 rounded-lg p-4 border border-vine-600/30">
+                  <div className="text-sm text-vine-300 mb-2">CA:</div>
+                  <div className="text-lg font-mono text-cat-orange mb-2 break-all">
+                    Coming Soon
+                  </div>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => navigator.clipboard.writeText('Coming Soon')}
-                    className="text-xs text-cat-orange hover:text-cat-orange/80 transition-colors cursor-pointer"
+                    className="text-xs text-vine-200 hover:text-cat-orange transition-colors cursor-pointer"
                   >
                     (可以复制)
                   </motion.button>
