@@ -35,7 +35,7 @@ const LoadingScreen: React.FC = () => {
           transition={{ delay: 0.6 }}
           className="text-vine-100 text-lg"
         >
-          Vine的唯一宠物正在加载中...
+          Vine's only pet is loading...
         </motion.p>
         
         <motion.div
