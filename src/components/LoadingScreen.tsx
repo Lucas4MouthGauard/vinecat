@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import vinecatLogo from '../assets/vinecat.png'
 
 const LoadingScreen: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const LoadingScreen: React.FC = () => {
           className="w-24 h-24 mx-auto mb-8"
         >
           <div className="w-full h-full bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-            <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
+            <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
           </div>
         </motion.div>
         

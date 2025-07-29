@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Play, Heart } from 'lucide-react'
+import vinecatLogo from '../assets/vinecat.png'
 
 const Hero: React.FC = () => {
   const scrollToNext = () => {
@@ -140,7 +141,7 @@ const Hero: React.FC = () => {
             }}
             className="w-32 h-32 mx-auto mb-8 bg-cat-orange rounded-full flex items-center justify-center shadow-2xl overflow-hidden"
           >
-            <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
+            <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
           </motion.div>
         </motion.div>
 

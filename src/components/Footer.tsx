@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Heart, Twitter } from 'lucide-react'
+import vinecatLogo from '../assets/vinecat.png'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -17,7 +18,7 @@ const Footer: React.FC = () => {
             className="flex items-center justify-center space-x-3 mb-6"
           >
             <div className="w-12 h-12 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-              <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
+              <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
             </div>
             <span className="text-2xl font-bold font-cat">VineCat</span>
           </motion.div>

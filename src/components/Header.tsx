@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X, Wallet } from 'lucide-react'
 import { AnimatePresence } from 'framer-motion'
+import vinecatLogo from '../assets/vinecat.png'
 
 interface Section {
   id: string
@@ -46,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
             className="flex items-center space-x-2"
           >
             <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-              <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
+              <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
             </div>
             <span className={`text-xl font-bold font-cat ${
               isScrolled ? 'text-vine-600' : 'text-white'
