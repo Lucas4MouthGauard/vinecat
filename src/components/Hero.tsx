@@ -154,6 +154,48 @@ const Hero: React.FC = () => {
           VineCat
         </motion.h1>
 
+        {/* Token Information */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mb-6"
+        >
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              {/* Token Symbol */}
+              <div className="text-center">
+                <div className="text-2xl font-bold text-cat-orange mb-2">$VineCat</div>
+                <div className="text-sm text-vine-200">Token Symbol</div>
+              </div>
+              
+              {/* Contract Address */}
+              <div className="text-center">
+                <div className="bg-vine-800/50 rounded-lg p-3 border border-vine-600/30">
+                  <div className="text-sm text-vine-300 mb-1">CA: Coming Soon</div>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => navigator.clipboard.writeText('Coming Soon')}
+                    className="text-xs text-cat-orange hover:text-cat-orange/80 transition-colors cursor-pointer"
+                  >
+                    (可以复制)
+                  </motion.button>
+                </div>
+              </div>
+              
+              {/* Buy Button */}
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-cat-orange to-vine-500 hover:from-cat-orange/90 hover:to-vine-500/90 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-lg transition-all duration-300"
+              >
+                Buy
+              </motion.button>
+            </div>
+          </div>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
