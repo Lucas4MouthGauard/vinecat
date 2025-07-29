@@ -40,7 +40,9 @@ const Footer: React.FC = () => {
           >
             <motion.a
               whileHover={{ scale: 1.1, y: -2 }}
-              href="#"
+              href="https://x.com/VineCat_bonk"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 bg-vine-700 hover:bg-cat-orange rounded-full flex items-center justify-center transition-colors"
             >
               <Twitter className="w-5 h-5" />
