@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ChevronDown, Play, Heart } from 'lucide-react'
+import { ChevronDown, Play } from 'lucide-react'
 import vinecatLogo from '../assets/vinecat.png'
 
 const Hero: React.FC = () => {
