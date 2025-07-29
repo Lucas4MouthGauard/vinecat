@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Wallet, Shield, Zap, CheckCircle, ExternalLink, Copy, Download, X, FileText } from 'lucide-react'
+import { Wallet, Shield, Zap, CheckCircle, ExternalLink, Copy, X, FileText } from 'lucide-react'
 
 interface WalletModalProps {
   isOpen: boolean

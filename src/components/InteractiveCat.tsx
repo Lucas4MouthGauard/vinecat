@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { MessageCircle, Heart, Play, Zap } from 'lucide-react'
+import { MessageCircle, Heart, Zap } from 'lucide-react'
 
 const InteractiveCat: React.FC = () => {
   const [ref, inView] = useInView({
