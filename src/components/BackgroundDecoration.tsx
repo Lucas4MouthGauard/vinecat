@@ -4,7 +4,7 @@ import vinecatLogo from '../assets/vinecat.png'
 const BackgroundDecoration: React.FC = () => {
   return (
     <div className="bg-decoration">
-      {/* 浮动的VineCat Logo */}
+              {/* Floating VineCat Logo */}
                     <img
                 src={vinecatLogo}
                 alt="VineCat"
@@ -26,12 +26,12 @@ const BackgroundDecoration: React.FC = () => {
                 className="floating-logo"
               />
       
-      {/* 几何装饰形状 */}
+              {/* Geometric Decorative Shapes */}
       <div className="geometric-shape"></div>
       <div className="geometric-shape"></div>
       <div className="geometric-shape"></div>
       
-      {/* 粒子效果 */}
+              {/* Particle Effects */}
       <div className="particle"></div>
       <div className="particle"></div>
       <div className="particle"></div>

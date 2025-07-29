@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gradient-to-r from-vine-800 to-vine-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
-          {/* Logo和描述 */}
+          {/* Logo and Description */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* 分隔线 */}
+        {/* Divider */}
         <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
           className="border-t border-vine-700 mt-12 pt-8"
         />
 
-        {/* 版权信息 */}
+        {/* Copyright Information */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* 特殊声明 */}
+        {/* Special Statement */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

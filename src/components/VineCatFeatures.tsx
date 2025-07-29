@@ -124,23 +124,23 @@ const VineCatFeatures: React.FC = () => {
             className="space-y-6"
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-              <h3 className="text-2xl font-bold text-vine-700 mb-4">为什么选择VineCat？</h3>
+              <h3 className="text-2xl font-bold text-vine-700 mb-4">Why Choose VineCat?</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
-                  <span>唯一性：Vine生态中独一无二的数字宠物</span>
+                  <span>Uniqueness: The only digital pet in the Vine ecosystem</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
-                  <span>智能性：基于AI的个性化交互体验</span>
+                  <span>Intelligence: AI-powered personalized interactive experience</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
-                  <span>情感性：能够理解和回应用户的情感需求</span>
+                  <span>Emotional: Can understand and respond to user emotional needs</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
-                  <span>文化性：承载Vine平台的文化记忆和情感</span>
+                  <span>Cultural: Carries the cultural memories and emotions of the Vine platform</span>
                 </li>
               </ul>
             </div>

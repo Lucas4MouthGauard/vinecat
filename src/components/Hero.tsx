@@ -190,7 +190,7 @@ const Hero: React.FC = () => {
             className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2 backdrop-blur-sm border border-white/30"
           >
             <Heart size={20} />
-            了解更多
+            Learn More
           </motion.button>
         </motion.div>
 

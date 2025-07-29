@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
               </motion.button>
             ))}
             
-            {/* 钱包连接按钮 */}
+            {/* Wallet Connect Button */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -134,7 +134,7 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
                     </motion.button>
                   ))}
                   
-                  {/* 移动端钱包按钮 */}
+                                        {/* Mobile Wallet Button */}
                   <motion.button
                     whileTap={{ scale: 0.95 }}
                     onClick={() => {
