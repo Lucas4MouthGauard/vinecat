@@ -28,8 +28,8 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-vine-200 leading-relaxed mb-6 max-w-md mx-auto"
           >
-            VineCat是Vine平台的唯一宠物，承载着Vine文化的记忆和情感。
-            我们致力于为用户提供最优质的智能交互体验，让每个瞬间都变得珍贵。
+            VineCat is Vine's only pet, carrying the memories and emotions of Vine culture.
+            We are committed to providing users with the highest quality intelligent interactive experience, making every moment precious.
           </motion.p>
           
           <motion.div
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
           className="flex flex-col md:flex-row justify-between items-center"
         >
                     <div className="text-vine-300 text-sm text-center">
-            © {currentYear} VineCat. 保留所有权利。
+            © {currentYear} VineCat. All rights reserved.
           </div>
         </motion.div>
 
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             <span>for the Vine community</span>
           </div>
           <p className="text-xs text-vine-400 mt-2">
-            VineCat - 承载Vine文化记忆的数字宠物
+            VineCat - Digital pet carrying Vine cultural memories
           </p>
         </motion.div>
       </div>

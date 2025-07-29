@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Wallet } from 'lucide-react'
 import { AnimatePresence } from 'framer-motion'
 
 interface Section {
@@ -12,9 +12,10 @@ interface HeaderProps {
   sections: Section[]
   currentSection: string
   onSectionChange: (sectionId: string) => void
+  onWalletClick: () => void
 }
 
-const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChange }) => {
+const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChange, onWalletClick }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -55,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             {sections.map((section) => (
               <motion.button
                 key={section.id}
@@ -73,6 +74,21 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
                 {section.name}
               </motion.button>
             ))}
+            
+            {/* 钱包连接按钮 */}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={onWalletClick}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center space-x-2 ${
+                isScrolled
+                  ? 'bg-cat-orange text-white hover:bg-cat-orange/90'
+                  : 'bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm'
+              }`}
+            >
+              <Wallet className="w-4 h-4" />
+              <span>Connect Wallet</span>
+            </motion.button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -98,25 +114,38 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 overflow-hidden"
             >
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {sections.map((section) => (
+                              <div className="px-2 pt-2 pb-3 space-y-1">
+                  {sections.map((section) => (
+                    <motion.button
+                      key={section.id}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => {
+                        onSectionChange(section.id)
+                        setIsMobileMenuOpen(false)
+                      }}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
+                        currentSection === section.id
+                          ? 'text-cat-orange bg-cat-orange/10'
+                          : 'text-vine-600 hover:text-cat-orange hover:bg-cat-orange/5'
+                      }`}
+                    >
+                      {section.name}
+                    </motion.button>
+                  ))}
+                  
+                  {/* 移动端钱包按钮 */}
                   <motion.button
-                    key={section.id}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => {
-                      onSectionChange(section.id)
+                      onWalletClick()
                       setIsMobileMenuOpen(false)
                     }}
-                    className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                      currentSection === section.id
-                        ? 'text-cat-orange bg-cat-orange/10'
-                        : 'text-vine-600 hover:text-cat-orange hover:bg-cat-orange/5'
-                    }`}
+                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-vine-600 hover:text-cat-orange hover:bg-cat-orange/5 flex items-center space-x-2"
                   >
-                    {section.name}
+                    <Wallet className="w-4 h-4" />
+                    <span>Connect Wallet</span>
                   </motion.button>
-                ))}
-              </div>
+                </div>
             </motion.div>
           )}
         </AnimatePresence>

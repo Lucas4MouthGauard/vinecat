@@ -12,33 +12,40 @@ const VineCatFeatures: React.FC = () => {
   const features = [
     {
       icon: <Sparkles className="w-8 h-8" />,
-      title: "智能交互",
-      description: "VineCat能够理解你的情绪，提供个性化的互动体验",
+      title: "Intelligent Interaction",
+      description: "VineCat can understand your emotions and provide personalized interactive experiences",
       color: "from-pink-500 to-purple-500"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "实时响应",
-      description: "毫秒级的响应速度，让每一次互动都流畅自然",
+      title: "Real-time Response",
+      description: "Millisecond-level response speed makes every interaction smooth and natural",
       color: "from-yellow-500 to-orange-500"
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: "独特个性",
-      description: "作为Vine的唯一宠物，拥有独一无二的性格特征",
+      title: "Unique Personality",
+      description: "As Vine's only pet, it possesses unique personality traits",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <Crown className="w-8 h-8" />,
-      title: "王者地位",
-      description: "在Vine生态中享有特殊地位，是真正的数字宠物之王",
+      title: "Royal Status",
+      description: "Enjoys special status in the Vine ecosystem, truly the king of digital pets",
       color: "from-green-500 to-emerald-500"
     }
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-vine-50 to-cat-cream">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-br from-vine-50 to-cat-cream relative overflow-hidden">
+      {/* 背景装饰 */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-24 h-24 bg-cat-orange/5 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-vine-400/5 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-r from-cat-orange/3 to-vine-400/3 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
@@ -47,11 +54,11 @@ const VineCatFeatures: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-vine-600 mb-6 font-cat">
-            VineCat 特色
+            VineCat Features
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            作为Vine的唯一宠物，VineCat拥有独特的智能交互能力，
-            为Vine社区带来全新的数字宠物体验。
+            As Vine's only pet, VineCat possesses unique intelligent interaction capabilities,
+            bringing a new digital pet experience to the Vine community.
           </p>
         </motion.div>
 
@@ -184,9 +191,15 @@ const VineCatFeatures: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const interactiveSection = document.getElementById('interactive')
+              if (interactiveSection) {
+                interactiveSection.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
             className="bg-gradient-to-r from-cat-orange to-vine-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            开始与VineCat互动
+            Start Interacting with VineCat
           </motion.button>
         </motion.div>
       </div>

@@ -12,23 +12,23 @@ const AboutVine: React.FC = () => {
   const features = [
     {
       icon: <Video className="w-8 h-8" />,
-      title: "短视频平台",
-      description: "Vine是一个专注于6秒短视频分享的社交媒体平台，让创意无限可能"
+      title: "Short Video Platform",
+      description: "Vine was a social media platform focused on 6-second video sharing, making creativity limitless"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "全球社区",
-      description: "连接全球创作者，分享生活瞬间，创造独特的数字文化"
+      title: "Global Community",
+      description: "Connecting creators worldwide, sharing life moments, creating unique digital culture"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "创意无限",
-      description: "6秒的限制激发了无限的创意，让每个瞬间都变得珍贵"
+      title: "Infinite Creativity",
+      description: "The 6-second limit inspired unlimited creativity, making every moment precious"
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "情感连接",
-      description: "通过短视频建立真实的情感连接，让世界变得更小更温暖"
+      title: "Emotional Connection",
+      description: "Building genuine emotional connections through short videos, making the world smaller and warmer"
     }
   ]
 
@@ -43,11 +43,11 @@ const AboutVine: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-vine-600 mb-6 font-cat">
-            关于 Vine
+            About Vine
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Vine是一个革命性的短视频平台，通过6秒的限制重新定义了内容创作。
-            在这里，每个瞬间都是艺术，每个创意都值得被看见。
+            Vine was a revolutionary short-form video platform that redefined content creation through its 6-second limit.
+            Here, every moment is art, and every idea deserves to be seen.
           </p>
         </motion.div>
 
@@ -58,19 +58,19 @@ const AboutVine: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="bg-gradient-to-br from-vine-500 to-vine-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Vine的起源</h3>
+              <h3 className="text-2xl font-bold mb-4">Origin of Vine</h3>
               <p className="text-lg leading-relaxed mb-6">
-                Vine于2012年由Dom Hofmann、Rus Yusupov和Colin Kroll创立，
-                最初是一个6秒循环视频分享应用。这个简单的概念迅速风靡全球，
-                成为短视频时代的开创者。
+                Vine was founded in 2012 by Dom Hofmann, Rus Yusupov, and Colin Kroll,
+                initially as a 6-second looping video sharing app. This simple concept quickly went viral worldwide,
+                becoming the pioneer of the short-form video era.
               </p>
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                   <span className="text-2xl">🎬</span>
                 </div>
                 <div>
-                  <div className="font-semibold">6秒循环</div>
-                  <div className="text-sm opacity-90">创新的时间限制</div>
+                  <div className="font-semibold">6-Second Loop</div>
+                  <div className="text-sm opacity-90">Innovative time constraint</div>
                 </div>
               </div>
             </div>
@@ -83,18 +83,18 @@ const AboutVine: React.FC = () => {
             className="space-y-6"
           >
             <div className="bg-cat-cream rounded-xl p-6">
-              <h4 className="text-xl font-semibold text-cat-black mb-3">文化影响</h4>
+              <h4 className="text-xl font-semibold text-cat-black mb-3">Cultural Impact</h4>
               <p className="text-gray-700">
-                Vine不仅是一个应用，更是一种文化现象。它培养了无数网红，
-                创造了无数流行梗，影响了整个社交媒体生态。
+                Vine was not just an app, but a cultural phenomenon. It nurtured countless influencers,
+                created numerous viral memes, and influenced the entire social media ecosystem.
               </p>
             </div>
             
             <div className="bg-vine-50 rounded-xl p-6">
-              <h4 className="text-xl font-semibold text-vine-700 mb-3">创意革命</h4>
+              <h4 className="text-xl font-semibold text-vine-700 mb-3">Creative Revolution</h4>
               <p className="text-gray-700">
-                6秒的限制看似简单，却激发了前所未有的创意。从喜剧到音乐，
-                从舞蹈到艺术，Vine重新定义了什么是可能的。
+                The 6-second limit seemed simple, but it inspired unprecedented creativity. From comedy to music,
+                from dance to art, Vine redefined what was possible.
               </p>
             </div>
           </motion.div>

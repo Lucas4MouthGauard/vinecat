@@ -38,6 +38,86 @@ const Hero: React.FC = () => {
           }}
           className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cat-cream/20 rounded-full blur-3xl"
         />
+        
+        {/* 额外的装饰元素 */}
+        <motion.div
+          animate={{
+            scale: [1, 1.1, 1],
+            opacity: [0.3, 0.6, 0.3],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-10 right-1/3 w-16 h-16 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-2xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1.1, 1, 1.1],
+            opacity: [0.4, 0.7, 0.4],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+          className="absolute bottom-10 right-10 w-20 h-20 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 rounded-full blur-2xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.2, 0.5, 0.2],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+          className="absolute top-1/2 left-10 w-12 h-12 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-full blur-xl"
+        />
+        
+        {/* 装饰性线条 */}
+        <motion.div
+          animate={{
+            scaleX: [0, 1, 0],
+            opacity: [0, 1, 0],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute top-1/4 left-0 w-32 h-px bg-gradient-to-r from-transparent via-cat-orange/30 to-transparent"
+        />
+        <motion.div
+          animate={{
+            scaleX: [0, 1, 0],
+            opacity: [0, 1, 0],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+          className="absolute bottom-1/4 right-0 w-32 h-px bg-gradient-to-l from-transparent via-vine-400/30 to-transparent"
+        />
+        <motion.div
+          animate={{
+            scaleX: [0, 1, 0],
+            opacity: [0, 1, 0],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-24 h-px bg-gradient-to-r from-transparent via-cat-cream/30 to-transparent"
+        />
       </div>
 
       {/* Content */}
@@ -79,7 +159,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl mb-8 text-vine-100"
         >
-          Vine的唯一宠物，智能交互体验
+          Vine's Only Pet, Intelligent Interactive Experience
         </motion.p>
 
         <motion.div
@@ -91,10 +171,16 @@ const Hero: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const interactiveSection = document.getElementById('interactive')
+              if (interactiveSection) {
+                interactiveSection.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
             className="bg-cat-orange hover:bg-cat-orange/90 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2 shadow-lg"
           >
             <Play size={20} />
-            开始体验
+            Start Experience
           </motion.button>
           
           <motion.button
