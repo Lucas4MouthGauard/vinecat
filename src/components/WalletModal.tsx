@@ -51,7 +51,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
     
     setIsConnecting(true)
     
-    // 模拟连接过程
+    // Simulate connection process
     setTimeout(() => {
       setIsConnecting(false)
       setIsConnected(true)
@@ -69,7 +69,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
   const handleSign = async () => {
     setIsSigning(true)
     
-    // 模拟签名过程
+    // Simulate signing process
     setTimeout(() => {
       setIsSigning(false)
       setIsSigned(true)
@@ -85,9 +85,9 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
   }
 
   const handleClose = () => {
-    if (isConnecting || isSigning) return // 连接中或签名中不允许关闭
+    if (isConnecting || isSigning) return // Cannot close during connection or signing
     onClose()
-    // 重置状态
+          // Reset state
     setTimeout(() => {
       setIsConnected(false)
       setIsSigned(false)
@@ -114,7 +114,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
             className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* 头部 */}
+                                {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-gray-100">
               <h2 className="text-xl font-bold text-vine-700 flex items-center">
                 <Wallet className="w-5 h-5 mr-2" />
@@ -133,11 +133,11 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                </motion.button>
             </div>
 
-            {/* 内容 */}
+                                {/* Content */}
             <div className="p-6">
               {!isConnected ? (
                 <>
-                  {/* 钱包选择 */}
+                                            {/* Wallet Selection */}
                   <div className="space-y-3 mb-6">
                     {wallets.map((wallet) => (
                       <motion.div
@@ -167,7 +167,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                     ))}
                   </div>
 
-                  {/* 连接按钮 */}
+                                            {/* Connect Button */}
                   {selectedWallet && (
                     <motion.button
                       initial={{ opacity: 0, y: 20 }}
@@ -193,7 +193,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                     </motion.button>
                   )}
 
-                  {/* 安全提示 */}
+                                            {/* Security Tip */}
                   <div className="mt-6 p-4 bg-vine-50 rounded-xl">
                     <div className="flex items-start space-x-3">
                       <Shield className="w-5 h-5 text-vine-600 mt-0.5" />
@@ -205,7 +205,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                   </div>
                 </>
                              ) : (
-                 /* 连接成功状态 */
+                                         /* Connected State */
                  <div className="text-center">
                    {!isSigned ? (
                      <>
@@ -215,7 +215,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                        <h3 className="text-lg font-bold text-blue-700 mb-2">Connection Successful!</h3>
                        <p className="text-gray-600 text-sm mb-4">Your wallet has been successfully connected to VineCat</p>
 
-                       {/* 钱包地址 */}
+                       {/* Wallet Address */}
                        <div className="bg-gray-50 rounded-xl p-3 mb-4">
                          <div className="flex items-center justify-between mb-2">
                            <span className="text-xs font-medium text-gray-600">Wallet Address</span>
@@ -233,7 +233,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                          </div>
                        </div>
 
-                       {/* 签名提示 */}
+                       {/* Signature Prompt */}
                        <div className="bg-vine-50 rounded-xl p-4 mb-6">
                          <div className="flex items-start space-x-3">
                            <FileText className="w-5 h-5 text-vine-600 mt-0.5" />
@@ -247,7 +247,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                          </div>
                        </div>
 
-                       {/* 签名按钮 */}
+                       {/* Sign Button */}
                        <motion.button
                          whileHover={{ scale: 1.02 }}
                          whileTap={{ scale: 0.98 }}
@@ -271,14 +271,14 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                      </>
                    ) : (
                      <>
-                       {/* 签名成功状态 */}
+                       {/* Signature Success State */}
                        <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                          <CheckCircle className="w-8 h-8 text-white" />
                        </div>
                        <h3 className="text-lg font-bold text-green-700 mb-2">Verification Complete!</h3>
                        <p className="text-gray-600 text-sm mb-4">Your wallet has been successfully verified and connected to VineCat</p>
 
-                       {/* 钱包地址 */}
+                       {/* Wallet Address */}
                        <div className="bg-gray-50 rounded-xl p-3 mb-4">
                          <div className="flex items-center justify-between mb-2">
                            <span className="text-xs font-medium text-gray-600">Wallet Address</span>
@@ -296,7 +296,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                          </div>
                        </div>
 
-                       {/* 操作按钮 */}
+                       {/* Action Buttons */}
                        <div className="grid grid-cols-2 gap-3">
                                               <motion.button
                        whileHover={{ scale: 1.02 }}
@@ -323,7 +323,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                )}
             </div>
 
-            {/* 底部下载链接 */}
+                                {/* Footer Download Links */}
             {!isConnected && (
               <div className="p-6 bg-gray-50 rounded-b-2xl">
                 <p className="text-sm text-gray-600 mb-3">Don't have a wallet?</p>

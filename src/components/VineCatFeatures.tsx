@@ -38,7 +38,7 @@ const VineCatFeatures: React.FC = () => {
 
   return (
     <section className="py-20 bg-gradient-to-br from-vine-50 to-cat-cream relative overflow-hidden">
-      {/* 背景装饰 */}
+                    {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-24 h-24 bg-cat-orange/5 rounded-full blur-2xl"></div>
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-vine-400/5 rounded-full blur-2xl"></div>
@@ -84,7 +84,7 @@ const VineCatFeatures: React.FC = () => {
                 <img src="/images/vinecat.png" alt="VineCat" className="w-full h-full object-cover" />
               </motion.div>
               
-              {/* 装饰性元素 */}
+              {/* Decorative Elements */}
               <motion.div
                 animate={{ 
                   y: [0, -10, 0],

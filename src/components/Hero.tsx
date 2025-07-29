@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cat-cream/20 rounded-full blur-3xl"
         />
         
-        {/* 额外的装饰元素 */}
+        {/* Additional Decorative Elements */}
         <motion.div
           animate={{
             scale: [1, 1.1, 1],
@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
           className="absolute top-1/2 left-10 w-12 h-12 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-full blur-xl"
         />
         
-        {/* 装饰性线条 */}
+        {/* Decorative Lines */}
         <motion.div
           animate={{
             scaleX: [0, 1, 0],
