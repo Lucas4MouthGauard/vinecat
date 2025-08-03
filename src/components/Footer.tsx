@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-vine-200 leading-relaxed mb-6 max-w-md mx-auto"
           >
-            VerdisDoge is Vine's only pet, carrying the memories and emotions of Vine culture.
+            VerdisDoge is Verdis's only pet, carrying the memories and emotions of Verdis culture.
             We are committed to providing users with the highest quality intelligent interactive experience, making every moment precious.
           </motion.p>
           
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
           >
             <motion.a
               whileHover={{ scale: 1.1, y: -2 }}
-              href="https://x.com/VineCat_bonk"
+                              href="https://x.com/VerdisDoge"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-vine-700 hover:bg-cat-orange rounded-full flex items-center justify-center transition-colors"
@@ -86,10 +86,10 @@ const Footer: React.FC = () => {
             >
               <Heart className="w-4 h-4 text-cat-orange" />
             </motion.div>
-            <span>for the Vine community</span>
+            <span>for the Verdis community</span>
           </div>
           <p className="text-xs text-vine-400 mt-2">
-            VerdisDoge - Digital pet carrying Vine cultural memories
+            VerdisDoge - Digital pet carrying Verdis cultural memories
           </p>
         </motion.div>
       </div>

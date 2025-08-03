@@ -13,7 +13,7 @@ const AboutVine: React.FC = () => {
     {
       icon: <Video className="w-8 h-8" />,
       title: "Short Video Platform",
-      description: "Vine was a social media platform focused on 6-second video sharing, making creativity limitless"
+              description: "Verdis was a social media platform focused on 6-second video sharing, making creativity limitless"
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -43,10 +43,10 @@ const AboutVine: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-vine-600 mb-6 font-cat">
-            About Vine
+            About Verdis
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Vine was a revolutionary short-form video platform that redefined content creation through its 6-second limit.
+            Verdis was a revolutionary short-form video platform that redefined content creation through its 6-second limit.
             Here, every moment is art, and every idea deserves to be seen.
           </p>
         </motion.div>
@@ -58,9 +58,9 @@ const AboutVine: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="bg-gradient-to-br from-vine-500 to-vine-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Origin of Vine</h3>
+              <h3 className="text-2xl font-bold mb-4">Origin of Verdis</h3>
               <p className="text-lg leading-relaxed mb-6">
-                Vine was founded in 2012 by Dom Hofmann, Rus Yusupov, and Colin Kroll,
+                Verdis was founded in 2012 by Dom Hofmann, Rus Yusupov, and Colin Kroll,
                 initially as a 6-second looping video sharing app. This simple concept quickly went viral worldwide,
                 becoming the pioneer of the short-form video era.
               </p>
@@ -85,7 +85,7 @@ const AboutVine: React.FC = () => {
             <div className="bg-cat-cream rounded-xl p-6">
               <h4 className="text-xl font-semibold text-cat-black mb-3">Cultural Impact</h4>
               <p className="text-gray-700">
-                Vine was not just an app, but a cultural phenomenon. It nurtured countless influencers,
+                Verdis was not just an app, but a cultural phenomenon. It nurtured countless influencers,
                 created numerous viral memes, and influenced the entire social media ecosystem.
               </p>
             </div>
@@ -94,7 +94,7 @@ const AboutVine: React.FC = () => {
               <h4 className="text-xl font-semibold text-vine-700 mb-3">Creative Revolution</h4>
               <p className="text-gray-700">
                 The 6-second limit seemed simple, but it inspired unprecedented creativity. From comedy to music,
-                from dance to art, Vine redefined what was possible.
+                from dance to art, Verdis redefined what was possible.
               </p>
             </div>
           </motion.div>

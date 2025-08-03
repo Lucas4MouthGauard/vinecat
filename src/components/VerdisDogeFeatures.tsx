@@ -26,13 +26,13 @@ const VerdisDogeFeatures: React.FC = () => {
     {
       icon: <Star className="w-8 h-8" />,
       title: "Unique Personality",
-      description: "As Vine's only pet, it possesses unique personality traits",
+              description: "As Verdis's only pet, it possesses unique personality traits",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <Crown className="w-8 h-8" />,
       title: "Royal Status",
-      description: "Enjoys special status in the Vine ecosystem, truly the king of digital pets",
+              description: "Enjoys special status in the Verdis ecosystem, truly the king of digital pets",
       color: "from-green-500 to-emerald-500"
     }
   ]
@@ -58,8 +58,8 @@ const VerdisDogeFeatures: React.FC = () => {
             VerdisDoge Features
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            As Vine's only pet, VerdisDoge possesses unique intelligent interaction capabilities,
-            bringing a new digital pet experience to the Vine community.
+            As Verdis's only pet, VerdisDoge possesses unique intelligent interaction capabilities,
+            bringing a new digital pet experience to the Verdis community.
           </p>
         </motion.div>
 
@@ -129,7 +129,7 @@ const VerdisDogeFeatures: React.FC = () => {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
-                  <span>Uniqueness: The only digital pet in the Vine ecosystem</span>
+                  <span>Uniqueness: The only digital pet in the Verdis ecosystem</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
@@ -141,7 +141,7 @@ const VerdisDogeFeatures: React.FC = () => {
                 </li>
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
-                  <span>Cultural: Carries the cultural memories and emotions of the Vine platform</span>
+                  <span>Cultural: Carries the cultural memories and emotions of the Verdis platform</span>
                 </li>
               </ul>
             </div>
