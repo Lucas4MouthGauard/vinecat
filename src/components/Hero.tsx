@@ -168,14 +168,14 @@ const Hero: React.FC = () => {
                 <div className="bg-vine-800/50 rounded-lg p-4 border border-vine-600/30">
                   <div className="text-sm text-vine-300 mb-2">CA:</div>
                                             <div className="text-lg font-mono text-cat-orange break-all">
-                            00000000000000000000000
+                            32pz8zuaKXfaxg4SFjSuwEQ2rXrV9XGFRVXcZ478bonk
                           </div>
                 </div>
               </div>
               
               {/* Buy Button */}
               <motion.a
-                href="#"
+                href="https://letsbonk.fun/token/32pz8zuaKXfaxg4SFjSuwEQ2rXrV9XGFRVXcZ478bonk"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
