@@ -19,7 +19,7 @@ const InteractiveCat: React.FC = () => {
     happy: [
       "喵喵喵！很高兴见到你！🐱",
       "今天天气真不错，想和我一起玩耍吗？",
-      "我是Vine的唯一宠物VineCat，请多关照！",
+              "我是Vine的唯一宠物VerdisDoge，请多关照！",
       "你的笑容让我心情很好呢！",
       "喵！今天BTC又涨了，心情超好！",
       "AI技术真是太神奇了，让我变得更聪明了！",
@@ -148,7 +148,7 @@ const InteractiveCat: React.FC = () => {
           "喵！Doge to the moon！🚀🌙",
           "喵喵！Pepe is love, Pepe is life！🐸",
           "喵！NFT艺术太酷了！🎨",
-          "喵！我也想要一个VineCat NFT！😸",
+          "喵！我也想要一个VerdisDoge NFT！😸",
           "喵！Meme币的春天来了！🌸"
         ]
         response = cryptoMemeResponses[Math.floor(Math.random() * cryptoMemeResponses.length)]
@@ -167,8 +167,8 @@ const InteractiveCat: React.FC = () => {
         const metaverseResponses = [
           "喵！元宇宙里我也要当网红！🌟",
           "喵喵！VR技术太神奇了！🥽",
-          "喵！虚拟世界里的VineCat！🎮",
-          "喵！AR/VR改变未来！🔮",
+                      "喵！虚拟世界里的VerdisDoge！🎮",
+            "喵！AR/VR改变未来！🔮",
           "喵！数字孪生世界！🌍"
         ]
         response = metaverseResponses[Math.floor(Math.random() * metaverseResponses.length)]
@@ -213,7 +213,7 @@ const InteractiveCat: React.FC = () => {
             Intelligent Interactive Experience
           </h2>
           <p className="text-xl text-vine-100 max-w-3xl mx-auto leading-relaxed">
-            Have real-time conversations with VineCat and experience the charm of intelligent interaction.
+            Have real-time conversations with VerdisDoge and experience the charm of intelligent interaction.
             It will respond accordingly based on your emotions and conversation content.
           </p>
         </motion.div>
@@ -232,7 +232,7 @@ const InteractiveCat: React.FC = () => {
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 className="w-96 h-96 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl mb-8 overflow-hidden"
               >
-                <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
+                <img src={vinecatLogo} alt="VerdisDoge" className="w-full h-full object-cover" />
               </motion.div>
               
               {/* 心情指示器 */}
@@ -292,10 +292,10 @@ const InteractiveCat: React.FC = () => {
           >
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-                <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
+                                <img src={vinecatLogo} alt="VerdisDoge" className="w-full h-full object-cover" />
               </div>
-                                <div>
-                    <h3 className="font-semibold">VineCat</h3>
+              <div>
+                <h3 className="font-semibold">VerdisDoge</h3>
                     <p className="text-sm text-vine-200">Online - Intelligent Interaction</p>
                   </div>
             </div>
@@ -358,7 +358,7 @@ const InteractiveCat: React.FC = () => {
                 value={userInput}
                 onChange={(e) => setUserInput(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                placeholder="Chat with VineCat..."
+                placeholder="Chat with VerdisDoge..."
                 className="flex-1 bg-white/20 text-white placeholder-vine-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-cat-orange"
               />
               <motion.button

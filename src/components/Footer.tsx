@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
             className="flex items-center justify-center space-x-3 mb-6"
           >
             <div className="w-12 h-12 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-              <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
+              <img src={vinecatLogo} alt="VerdisDoge" className="w-full h-full object-cover" />
             </div>
-            <span className="text-2xl font-bold font-cat">VineCat</span>
+                          <span className="text-2xl font-bold font-cat">VerdisDoge</span>
           </motion.div>
           
           <motion.p
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-vine-200 leading-relaxed mb-6 max-w-md mx-auto"
           >
-            VineCat is Vine's only pet, carrying the memories and emotions of Vine culture.
+            VerdisDoge is Vine's only pet, carrying the memories and emotions of Vine culture.
             We are committed to providing users with the highest quality intelligent interactive experience, making every moment precious.
           </motion.p>
           
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
           className="flex flex-col md:flex-row justify-between items-center"
         >
                     <div className="text-vine-300 text-sm text-center">
-            © {currentYear} VineCat. All rights reserved.
+            © {currentYear} VerdisDoge. All rights reserved.
           </div>
         </motion.div>
 
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
             <span>for the Vine community</span>
           </div>
           <p className="text-xs text-vine-400 mt-2">
-            VineCat - Digital pet carrying Vine cultural memories
+            VerdisDoge - Digital pet carrying Vine cultural memories
           </p>
         </motion.div>
       </div>

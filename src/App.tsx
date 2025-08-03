@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import AboutVine from './components/AboutVine'
-import VineCatFeatures from './components/VineCatFeatures'
+import VerdisDogeFeatures from './components/VerdisDogeFeatures'
 import InteractiveCat from './components/InteractiveCat'
 import WalletModal from './components/WalletModal'
 import Footer from './components/Footer'
@@ -27,7 +27,7 @@ function App() {
   const sections = [
     { id: 'home', name: 'Home' },
     { id: 'about', name: 'About Vine' },
-    { id: 'features', name: 'VineCat Features' },
+    { id: 'features', name: 'VerdisDoge Features' },
     { id: 'interactive', name: 'Interactive' }
   ]
 
@@ -74,7 +74,7 @@ function App() {
             </section>
             
             <section id="features">
-              <VineCatFeatures />
+              <VerdisDogeFeatures />
             </section>
             
             <section id="interactive">

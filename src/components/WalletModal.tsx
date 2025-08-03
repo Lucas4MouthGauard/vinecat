@@ -213,7 +213,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                          <CheckCircle className="w-8 h-8 text-white" />
                        </div>
                        <h3 className="text-lg font-bold text-blue-700 mb-2">Connection Successful!</h3>
-                       <p className="text-gray-600 text-sm mb-4">Your wallet has been successfully connected to VineCat</p>
+                       <p className="text-gray-600 text-sm mb-4">Your wallet has been successfully connected to VerdisDoge</p>
 
                        {/* Wallet Address */}
                        <div className="bg-gray-50 rounded-xl p-3 mb-4">
@@ -241,7 +241,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                              <p className="font-medium text-vine-700 mb-1">Signature Verification Required</p>
                              <p>For security, please sign the following message:</p>
                              <div className="bg-white rounded-lg p-2 mt-2 font-mono text-xs text-gray-700">
-                               "VineCat - Connection Verification - {new Date().toISOString().split('T')[0]}"
+                               "VerdisDoge - Connection Verification - {new Date().toISOString().split('T')[0]}"
                              </div>
                            </div>
                          </div>
@@ -276,7 +276,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
                          <CheckCircle className="w-8 h-8 text-white" />
                        </div>
                        <h3 className="text-lg font-bold text-green-700 mb-2">Verification Complete!</h3>
-                       <p className="text-gray-600 text-sm mb-4">Your wallet has been successfully verified and connected to VineCat</p>
+                       <p className="text-gray-600 text-sm mb-4">Your wallet has been successfully verified and connected to VerdisDoge</p>
 
                        {/* Wallet Address */}
                        <div className="bg-gray-50 rounded-xl p-3 mb-4">

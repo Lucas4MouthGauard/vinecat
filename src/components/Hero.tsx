@@ -141,7 +141,7 @@ const Hero: React.FC = () => {
             }}
             className="w-32 h-32 mx-auto mb-8 bg-cat-orange rounded-full flex items-center justify-center shadow-2xl overflow-hidden"
           >
-            <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
+            <img src={vinecatLogo} alt="VerdisDoge" className="w-full h-full object-cover" />
           </motion.div>
         </motion.div>
 
@@ -151,7 +151,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl font-bold mb-6 font-cat"
         >
-          VineCat
+                      VerdisDoge
         </motion.h1>
 
         {/* Token Information */}

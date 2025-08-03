@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { Sparkles, Zap, Star, Crown } from 'lucide-react'
 import vinecatLogo from '../assets/vinecat.png'
 
-const VineCatFeatures: React.FC = () => {
+const VerdisDogeFeatures: React.FC = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -14,7 +14,7 @@ const VineCatFeatures: React.FC = () => {
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Intelligent Interaction",
-      description: "VineCat can understand your emotions and provide personalized interactive experiences",
+              description: "VerdisDoge can understand your emotions and provide personalized interactive experiences",
       color: "from-pink-500 to-purple-500"
     },
     {
@@ -55,10 +55,10 @@ const VineCatFeatures: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-vine-600 mb-6 font-cat">
-            VineCat Features
+            VerdisDoge Features
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            As Vine's only pet, VineCat possesses unique intelligent interaction capabilities,
+            As Vine's only pet, VerdisDoge possesses unique intelligent interaction capabilities,
             bringing a new digital pet experience to the Vine community.
           </p>
         </motion.div>
@@ -82,7 +82,7 @@ const VineCatFeatures: React.FC = () => {
                 }}
                 className="w-80 h-80 mx-auto bg-gradient-to-br from-cat-orange to-cat-cream rounded-full flex items-center justify-center shadow-2xl overflow-hidden"
               >
-                                      <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
+                                      <img src={vinecatLogo} alt="VerdisDoge" className="w-full h-full object-cover" />
               </motion.div>
               
               {/* Decorative Elements */}
@@ -125,7 +125,7 @@ const VineCatFeatures: React.FC = () => {
             className="space-y-6"
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-              <h3 className="text-2xl font-bold text-vine-700 mb-4">Why Choose VineCat?</h3>
+              <h3 className="text-2xl font-bold text-vine-700 mb-4">Why Choose VerdisDoge?</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-cat-orange rounded-full"></span>
@@ -200,7 +200,7 @@ const VineCatFeatures: React.FC = () => {
             }}
             className="bg-gradient-to-r from-cat-orange to-vine-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Start Interacting with VineCat
+            Start Interacting with VerdisDoge
           </motion.button>
         </motion.div>
       </div>
@@ -208,4 +208,4 @@ const VineCatFeatures: React.FC = () => {
   )
 }
 
-export default VineCatFeatures 
+export default VerdisDogeFeatures 

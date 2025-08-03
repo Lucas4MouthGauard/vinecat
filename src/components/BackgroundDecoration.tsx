@@ -4,25 +4,25 @@ import vinecatLogo from '../assets/vinecat.png'
 const BackgroundDecoration: React.FC = () => {
   return (
     <div className="bg-decoration">
-              {/* Floating VineCat Logo */}
+              {/* Floating VerdisDoge Logo */}
                     <img
                 src={vinecatLogo}
-                alt="VineCat"
+                alt="VerdisDoge"
                 className="floating-logo"
               />
               <img
                 src={vinecatLogo}
-                alt="VineCat"
+                alt="VerdisDoge"
                 className="floating-logo"
               />
               <img
                 src={vinecatLogo}
-                alt="VineCat"
+                alt="VerdisDoge"
                 className="floating-logo"
               />
               <img
                 src={vinecatLogo}
-                alt="VineCat"
+                alt="VerdisDoge"
                 className="floating-logo"
               />
       

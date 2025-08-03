@@ -17,7 +17,7 @@ const LoadingScreen: React.FC = () => {
           className="w-24 h-24 mx-auto mb-8"
         >
           <div className="w-full h-full bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-            <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
+            <img src={vinecatLogo} alt="VerdisDoge" className="w-full h-full object-cover" />
           </div>
         </motion.div>
         
@@ -27,7 +27,7 @@ const LoadingScreen: React.FC = () => {
           transition={{ delay: 0.3 }}
           className="text-3xl font-bold text-white mb-4 font-cat"
         >
-          VineCat
+                      VerdisDoge
         </motion.h1>
         
         <motion.p

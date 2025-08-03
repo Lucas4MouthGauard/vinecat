@@ -47,12 +47,12 @@ const Header: React.FC<HeaderProps> = ({ sections, currentSection, onSectionChan
             className="flex items-center space-x-2"
           >
             <div className="w-10 h-10 bg-cat-orange rounded-full flex items-center justify-center overflow-hidden">
-              <img src={vinecatLogo} alt="VineCat" className="w-full h-full object-cover" />
+              <img src={vinecatLogo} alt="VerdisDoge" className="w-full h-full object-cover" />
             </div>
             <span className={`text-xl font-bold font-cat ${
               isScrolled ? 'text-vine-600' : 'text-white'
             }`}>
-              VineCat
+              VerdisDoge
             </span>
           </motion.div>
 
